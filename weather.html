@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="pictures\calendar-days-solid.svg" alt="Home"> Home</a></li>
+                <li><a href="tourism.html"><img src="pictures\tornado-solid.svg" alt="Tourism"> Tourism</a></li>
+                <li><a href="weather.html"><img src="pictures\cloud-solid.svg" alt="Weather"> Weather</a></li>
+                <li><a href="contact.html"><img src="pictures\address-book-solid.svg" alt="Contact"> Contact</a></li>
+                <li><a href="faq.html"><img src="pictures\question-solid.svg" alt="FAQ"> FAQ</a></li>
+                <li><a href="gallery.html"><img src="pictures\envira-brands-solid.svg" alt="Gallery"> Gallery</a></li>
+                <li><a href="events.html"><img src="pictures\calendar-days-solid.svg" alt="Events"> Events</a></li>
+                </ul>        
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search city weather">
+            <button id="search-btn">Search</button>
+            <button id="locate-btn">Get Current Location Weather</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>North-Western Province Weather</h1>
+            <p>The North-Western Province of Zambia experiences a tropical savanna climate, characterized by warm temperatures and distinct wet and dry seasons.</p>
+            <h2 id="current-weather">Current Weather Conditions</h2>
+            <div id="weather-data"></div>
+            <h2 id="current-time"></h2>
+            <video width="800" height="600" muted loop autoplay controls>
+                <source src="pictures\North-WesternProvinceWeather.mp4" type="video/mp4">
+            </video>
+            <h2>5-Day Weather Forecast</h2>
+            <div id="forecast-data"></div>
+            <h2>Weather Maps</h2>
+            <p>Visualize the weather patterns with our interactive maps.</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983877.428672693!2d24.815194699999996!3d-12.810590799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19644347aa05de15%3A0x972aa19c022f5333!2sNorthwestern%20Province!5e0!3m2!1sen!2szm!4v1731592322300!5m2!1sen!2szm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Weather Alerts and Warnings</h2>
+            <p>No alerts at this time.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 North-Western Province. All Rights Reserved. Designed and Maintained By Enoch Tawona Sithole, SIN: 24023227.</p>
+        <ul>
+    <li><a href="https://www.icuzambia.net/">ICU Zambia</a></li>
+    <li><a href="https://zrdc.org/">ZRDC</a></li>
+    </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

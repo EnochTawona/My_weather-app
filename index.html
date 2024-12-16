@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North-Western Province Tourism and Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="pictures\calendar-days-solid.svg" alt="Home"> Home</a></li>
+            <li><a href="tourism.html"><img src="pictures\tornado-solid.svg" alt="Tourism"> Tourism</a></li>
+            <li><a href="weather.html"><img src="pictures\cloud-solid.svg" alt="Weather"> Weather</a></li>
+            <li><a href="contact.html"><img src="pictures\address-book-solid.svg" alt="Contact"> Contact</a></li>
+            <li><a href="faq.html"><img src="pictures\question-solid.svg" alt="FAQ"> FAQ</a></li>
+            <li><a href="gallery.html"><img src="pictures\envira-brands-solid.svg" alt="Gallery"> Gallery</a></li>
+            <li><a href="events.html"><img src="pictures\calendar-days-solid.svg" alt="Events"> Events</a></li>
+            </ul>
+            
+    </nav>
+ <div class="search-bar">
+            <input type="text" id="search" placeholder="Search city weather">
+            <button id="search-btn">Search</button>
+            <button id="locate-btn">Get Current Location Weather</button>
+        </div>
+</header>
+<main>
+    <section>
+        <h1>Discover the Hidden Gem of North-Western Province</h1>
+        <p>The North-Western Province of Zambia is a treasure trove of natural wonders, rich culture, and exciting adventures. From the majestic Liuwa Plains National Park to the breathtaking Kundalila Falls, our province has something for every kind of traveler.</p>
+        <p>Explore our website to learn more about the top tourist attractions, weather updates, and events happening in the North-Western Province.</p>
+        <video width="800" height="600" muted loop autoplay controls>
+            <source src="pictures\North-Western.mp4" type="video/mp4">
+        </video>
+        <h2>Featured Tourist Attractions</h2>
+        <ul>
+            <li>Liuwa Plains National Park</li>
+            <li>Kundalila Falls</li>
+            <li>Mukuni Village</li>
+        </ul>
+        <h2>Weather Updates</h2>
+        <p>Stay up-to-date with the latest weather conditions and forecast for the North-Western Province.</p>
+        <button id="explore-tourism-btn" onclick="location.href='tourism.html'">Explore Tourism</button>
+        <button id="check-weather-btn" onclick="location.href='weather.html'">Check Weather</button>
+        <h2 id="current-weather">Current Weather Conditions</h2>
+            <div id="weather-data"></div>
+            <h2 id="current-time"></h2
+    <h2>5-Day Weather Forecast</h2>
+            <div id="forecast-data"></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 North-Western Province. All Rights Reserved. Designed and Maintained By Enoch Tawona Sithole, SIN: 24023227.</p>
+    <ul>
+        <li><a href="https://www.icuzambia.net/">ICU Zambia</a></li>
+        <li><a href="https://zrdc.org/">ZRDC</a></li>
+    </ul>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

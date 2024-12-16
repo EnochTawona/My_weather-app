@@ -1,0 +1,333 @@
+/* A) Color Properties */
+:root {
+  --primary-color: #4a7a4e; /* Earthy green for practicality */
+  --secondary-color: #ffffff; /* Clean white */
+  --accent-color: #d4a373; /* Warm beige for balance */
+  --background-color: #f9f9f9; /* Light grey for simplicity */
+  --text-color: #333333; /* Dark grey for readability */
+}
+
+/* B) Typography Properties */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+h1, h2 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+p, ul, li, a {
+  font-family: "Lato", sans-serif;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* C) Layout Properties */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* D) Background Properties */
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* E) Border Properties */
+button, input {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+button:hover, input:focus {
+  border-color: var(--accent-color);
+}
+
+/* F) Flexbox Properties */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* G) Grid Properties */
+main section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* H) Animation and Transition Properties */
+button, a {
+  transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  transition: transform 0.3s ease-in-out;
+}
+
+video:hover {
+  transform: scale(1.01);
+}
+
+/* I) Other Properties */
+video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 250px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px var(--accent-color);
+  outline: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .search-bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  main section {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+  }
+
+  .search-bar {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      align-items: flex-start;
+  }
+
+  .search-bar input {
+      width: 100%;
+  }
+
+  main {
+      padding: 1rem;
+  }
+
+  main section {
+      grid-template-columns: 1fr;
+  }
+
+  video {
+      width: 100%;
+  }
+
+  iframe {
+      width: 100%;
+      height: 300px; /* Adjust for better fit */
+  }
+
+  h1, h2 {
+      font-size: 1.5rem;
+  }
+
+  button, input[type="text"] {
+      width: 100%;
+  }
+}
+
+/* Responsive Design for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  nav ul li a {
+      font-size: 0.9rem;
+  }
+
+  h1, h2 {
+      font-size: 1.2rem;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+
+  iframe {
+      height: 250px; /* Compact for smaller screens */
+  }
+
+  video {
+      height: auto; /* Ensure proportional height */
+  }
+
+  .search-bar input, button {
+      font-size: 0.9rem;
+  }
+
+  button {
+      padding: 0.5rem;
+  }
+}
+  
+
+/* Navigation Bar Styling for Center-Aligned Icons */
+nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav ul li a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle; /* Aligns icon with the text */
+}
+
+/* Ensure proper hover styles */
+nav ul li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
+
+
+/* Navigation Bar Styling */
+nav {
+  background-color: var(--primary-color); /* Matches the header's background */
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around; /* Even spacing for menu items */
+  align-items: center; /* Centers items vertically */
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Vertically centers icon and text */
+  justify-content: center; /* Horizontally centers both */
+  gap: 0.5rem; /* Space between icon and text */
+  color: var(--secondary-color); /* Inherits secondary color */
+  font-weight: bold; /* Makes text bold for emphasis */
+  text-decoration: none; /* Removes underline */
+  padding: 0.5rem 1rem; /* Adds padding for better click area */
+  border-radius: 25px; /* Rounded corners for buttons */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+nav ul li a img {
+  width: 20px; /* Icon size */
+  height: 20px; /* Icon size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+
+nav ul li a:hover {
+  background-color: var(--accent-color); /* Changes background on hover */
+  color: var(--primary-color); /* Changes text color on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover effect */
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stacks navigation items */
+    gap: 1rem; /* Adds spacing between items */
+  }
+
+  nav ul li a {
+    justify-content: flex-start; /* Align items to the left in mobile view */
+    gap: 1rem; /* Increases space for clarity on smaller screens */
+    padding: 0.75rem 1rem; /* Larger padding for better touch support */
+  }
+}
